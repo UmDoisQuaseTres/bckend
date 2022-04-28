@@ -13,7 +13,7 @@ router.get('/:code/stats', async (req, res, next) => {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.status(200).json({message: "Hello"});
+  res.status(200).json({message: "Ola, API para encurtar links, em constante atualização"});
 });
 
 function generateCode() {
