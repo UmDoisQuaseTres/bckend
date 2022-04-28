@@ -44,7 +44,7 @@ router.get('/:code', async (req, res, next) => {
   const resultado = await Link.findOne({ where: { code } });
   if (!resultado) return res.sendStatus(404);
 
-  resultado.hits++;
+ // resultado.hits++; contador para pagina de estatisticas
   await resultado.save();
 
   res.redirect(resultado.url);
