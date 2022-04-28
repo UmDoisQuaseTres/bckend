@@ -6,7 +6,7 @@
   "author": "Matheus de Oliveira <um.dois.quase.tres@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "pm2 start ./bin/www -i max ",
+    "start": "node ./bin/www ",
     "dev": "nodemon -r dotenv/config ./bin/www"
   },
   "dependencies": {
