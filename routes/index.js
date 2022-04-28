@@ -6,7 +6,7 @@ router.get('/:code/stats', async (req, res, next) => {
   const code = req.params.code;
   const resultado = await Link.findOne({ where: { code } });
   if (!resultado) return res.sendStatus(404);
-  res.render('stats', resultado.dataValues);
+  res.send(resultado.dataValues);
 })
 
 /* GET home page. */
@@ -30,7 +30,7 @@ router.post('/new', async (req, res, next) => {
     url,
     code
   })
-  res.render('stats', resultado.dataValues);
+  res.send(resultado.dataValues);
 })
 
 router.get('/:code', async (req, res, next) => {
