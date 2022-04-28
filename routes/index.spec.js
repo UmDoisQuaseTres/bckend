@@ -15,6 +15,5 @@ describe('Testar as rotas',  () => {
         expect(resposta.statusCode).toEqual(200)
         expect(resposta.body).toHaveProperty('url')
     })
-
 })
 
