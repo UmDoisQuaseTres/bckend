@@ -1,4 +1,4 @@
-name: Complete workflow
+name: AHHHHH
 
 on:
   push:
@@ -25,43 +25,4 @@ jobs:
         run: npm install
 
       - name: Run all tests
-        run: npm install
-
-        name: Complete workflow
-
-on:
-  push:
-    branches:
-      - main
-      - master
-      - dev
-  pull_request:
-    branches:
-      - main
-      - master
-      - dev
-
-jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
-
-      - name: Run all tests
-        run: yarn test
-
+        run: npm test
