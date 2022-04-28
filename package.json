@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "preinstall": "yarn add pm2 -g",
-    "start": "pm2 start ./bin/www -i 0 --watch",
+    "preinstall": "npm install pm2 -g",
+    "start": "pm2 start ecosystem.config.js ./bin/www -i 0 --env production --watch",
     "dev": "npx nodemon -r dotenv/config ./bin/www"
   },
   "dependencies": {
