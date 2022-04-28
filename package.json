@@ -16,6 +16,7 @@
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "sequelize": "^6.19.0",
-    "sqlite3": "^5.0.6"
+    "sqlite3": "^5.0.6",
+    "valid-url": "^1.0.9"
   }
 }
